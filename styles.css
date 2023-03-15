@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+@media(max-width: 300px){
+	#continue{
+		width: 80% !important;
+	}
+}
 @media(max-width: 250px){
 	.img{
 		width: 100% !important;
@@ -6,11 +12,19 @@
 body{
 	background: rgba(239, 15, 255, 1.0);
 	background: linear-gradient(to right, rgba(239, 15, 255, 1.0), rgba(61, 255, 223, 1.0));
+    margin-top: 100px;
+    text-align: center;
+    font-family: 'Handlee', sans-serif;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+#present{
 	display: grid;
 	grid-template-areas: "lid"
 					     "box";
-    justify-items: center;
-    margin-top: 100px;
+    justify-items: center;	
 }
 .img{
 	width: 30%;
@@ -20,4 +34,18 @@ body{
 }
 .lid, .box{
 	transition: 0.6s transform;
+}
+#landscape{
+	width: 20%;
+}
+#continue{
+	width: 25%;
+	border: none;
+	background: rgba(255, 247, 20, 1.0);
+	background: linear-gradient(to right, rgba(255, 247, 20, 1.0), rgba(255, 153, 10, 1.0));
+	box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+	transition: 1s box-shadow;
+}
+#continue:hover{
+	box-shadow: 7px 7px 7px 0px rgba(0,0,0,0.75);	
 }
