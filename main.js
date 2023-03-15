@@ -11,7 +11,7 @@ box.addEventListener("click", playMusic);
 const start = () => {
 	setTimeout(function(){
 		confetti.start();
-	},1000)
+	},0000)
 }
 
 const stop = () => {
