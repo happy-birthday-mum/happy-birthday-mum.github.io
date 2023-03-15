@@ -1,0 +1,23 @@
+@media(max-width: 250px){
+	.img{
+		width: 100% !important;
+	}
+}
+body{
+	background: rgba(239, 15, 255, 1.0);
+	background: linear-gradient(to right, rgba(239, 15, 255, 1.0), rgba(61, 255, 223, 1.0));
+	display: grid;
+	grid-template-areas: "lid"
+					     "box";
+    justify-items: center;
+    margin-top: 100px;
+}
+.img{
+	width: 30%;
+}
+.lid:hover, .box:hover{
+	cursor: -webkit-grab; cursor: grab;
+}
+.lid, .box{
+	transition: 0.6s transform;
+}
